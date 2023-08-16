@@ -22,7 +22,7 @@ function Projects() {
           <div className="project-card">
             <img src={projectImage1} alt="Project" />
             <h3>Project Nameeeee dffg</h3>
-            <p>Project description goes here...</p>
+            <p>Project description goes here... yguyugadhghdas hjgshgdh hjgdshd jksdsa kjhjas hjghad hja</p>
             <div className="project-links">
               <a href="https://github.com/your-username/project-repo" target="_blank" rel="noopener noreferrer">GitHub</a>
               <a href="https://project-demo-url.com" target="_blank" rel="noopener noreferrer">Demo</a>

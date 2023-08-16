@@ -1,0 +1,62 @@
+/* src/components/Skills.css */
+.skills-section {
+    background-color: #f7f7f7;
+    padding: 4rem 0;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .skill-card {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+  }
+  
+  .skill-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .sub-skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-level {
+    width: 100px;
+    height: 8px;
+    background-color: #007bff;
+    position: relative;
+  }
+  
+  .skill-level-bar {
+    width: 100%;
+    height: 100%;
+    background-color: #007bff;
+    position: absolute;
+    left: 0;
+    transition: width 0.5s ease;
+  }
+  
+  .skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Add media query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

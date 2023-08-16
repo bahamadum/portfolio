@@ -2,14 +2,18 @@
 .home-section {
     width: 100%;
     height: 100vh;
-    background: url('https://i.stack.imgur.com/MkSui.jpg') center/cover no-repeat;
+    background: url('https://i.stack.imgur.com/MkSui.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 5%; */
+    overflow: hidden;
+    position: relative;
   }
   
-   .bg-overlay {
+  .bg-overlay {
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
@@ -17,22 +21,25 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   } 
   
   .centered-div {
     display: flex;
+    /* flex-direction: row; */
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     margin: 0 auto;
-    padding: 2rem;
-    
+    padding: 3rem;
   }
+  
   .centered-div div {
-    margin: 60px;
+    margin: 20px 70px;
+    padding-top: 4rem;
   }
+  
   
   .left-column {
     width: 50%;
@@ -55,14 +62,12 @@
   }
   
   .right-column h1 {
-    font-size: 3rem;
+    font-size: 2rem; /* Adjust font size for smaller screens */
     margin-bottom: 1rem;
-    width: 100%;
-    padding: 0;
   }
   
   .right-column p {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Adjust font size for smaller screens */
     margin-bottom: 2rem;
   }
   
@@ -79,5 +84,39 @@
   
   .cta-button:hover {
     background-color: #0056b3;
+  }
+  
+  /* Add a media query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .centered-div {
+        display: flex;
+        flex-direction: column; /* Adjust for smaller screens */
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: center;
+      }
+      .centered-div div {
+        margin: 0;
+        padding: 0;
+      }
+
+      .centered-div .left-column {
+        padding-top: 2rem;
+      }
+  
+    .left-column img {
+      width: 60%; /* Adjust image width for smaller screens */
+    }
+  
+    .right-column h1 {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+  
+    .right-column p {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
   }
   
