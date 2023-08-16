@@ -1,0 +1,83 @@
+/* src/components/Home.css */
+.home-section {
+    width: 100%;
+    height: 100vh;
+    background: url('https://i.stack.imgur.com/MkSui.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 5%; */
+  }
+  
+   .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+  
+  .centered-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    
+  }
+  .centered-div div {
+    margin: 60px;
+  }
+  
+  .left-column {
+    width: 50%;
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  .left-column img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .right-column {
+    flex: 2;
+    /* padding: 2rem; */
+    color: white;
+  }
+  
+  .right-column h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .right-column p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
