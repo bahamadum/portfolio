@@ -36,7 +36,7 @@ function Skills() {
         observer.unobserve(skillsSectionRef.current);
       }
     };
-  }, []);
+  }, [skillsSectionRef]);
 
   return (
     <section id="skills" className="skills-section" ref={skillsSectionRef}>
