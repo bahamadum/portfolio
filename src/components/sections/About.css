@@ -1,0 +1,127 @@
+.about-section {
+    background-color: #ffffff;
+    padding: 4rem 0;
+  }
+  
+  .content {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    /* text-align: left; */
+  }
+  /* .content #about {
+    text-align: left;
+    padding-left: 7rem;
+  } */
+  
+  .about-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    text-align: left;
+    /* padding: 20px; */
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .experience,
+  .education {
+    width: 48%;
+    position: relative;
+    padding-left: 30px; /* Adjust this value as needed */
+  }
+  
+  .experience h3,
+  .education h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgb(99, 178, 255);
+    margin-top: 0px;
+    text-align: left;
+    font-size: 64px;
+    font-weight: normal;
+  }
+  
+  .experience-item,
+  .education-item {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .experience-item h4,
+  .education-item h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    padding-left: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    line-height: 36px;
+  }
+  
+  .experience-item p,
+  .education-item p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 25px;
+  }
+  
+  .experience-item ul,
+  .education-item ul {
+    padding-left: 1rem;
+    list-style-type: disc;
+  }
+  
+  .experience-item li,
+  .education-item li {
+    margin-bottom: 0.25rem;
+  }
+  
+  .education-item p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-item::before,
+  .education-item::before {
+    content: '';
+    position: absolute;
+    top: 0px; /* Adjust this value to position the circle */
+    left: 0;
+    transform: translateX(-50%);
+    width: 20px; /* Adjust this value to change the circle size */
+    height: 20px; /* Adjust this value to change the circle size */
+    background-color: #007bff;
+    border-radius: 50%;
+  }
+  
+  .experience-item::after,
+  .education-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+    width: 4px; /* Increase line width */
+    height: calc(100% + 10px); /* Adjust this value to extend the line */
+    background-color: #007bff; /* Set line color to match circle color */
+  }
+  
+  /* Add media query for smaller screens */
+  @media (max-width: 768px) {
+    .about-grid {
+      flex-direction: column;
+    }
+  
+    .experience,
+    .education {
+      width: 90%;
+    }
+  }
+  

@@ -6,8 +6,6 @@ import Home from './components/sections/Home';
 import Projects from './components/sections/Projects';
 import Skills from './components/sections/Skills';
 import About from './components/sections/About';
-import Resume from './components/sections/Resume';
-import Blog from './components/sections/Blog';
 import Contact from './components/sections/Contact';
 import './App.css';
 
@@ -23,12 +21,13 @@ function App() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects">
+      {/* About Me Section */}
+            <section id="about">
         <div className="content">
-          <Projects />
+        <About />
         </div>
       </section>
+
 
       {/* Skills Section */}
       <section id="skills">
@@ -37,26 +36,26 @@ function App() {
         </div>
       </section>
 
-      {/* About Me Section */}
-      <section id="about">
+      {/* Projects Section */}
+      <section id="projects">
         <div className="content">
-        <About />
+          <Projects />
         </div>
       </section>
 
       {/* Resume Section */}
-      <section id="resume">
+      {/* <section id="resume">
         <div className="content">
         <Resume />
         </div>
-      </section>
+      </section> */}
 
-      {/* Blog Section */}
+      {/* Blog Section
       <section id="blog">
         <div className="content">
         <Blog />
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section id="contact">
@@ -67,7 +66,7 @@ function App() {
 
       {/* Footer */}
       <footer>
-        <p>&copy; 2023 Your Name</p>
+        <p>&copy; 2023 Sorie Bonkay Sillah </p>
       </footer>
     </div>
   );

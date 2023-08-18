@@ -55,6 +55,20 @@
   cursor: pointer;
 }
 
+.resume-button {
+  background-color: rgb(99, 178, 255);
+}
+
+/* .asterisk {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  transform: rotate(45deg);
+  margin-left: 2px;
+} */
+
+
 /* Add media query for screens smaller than 768px */
 @media (max-width: 768px) {
   .menu-icon {
