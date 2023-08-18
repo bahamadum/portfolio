@@ -10,7 +10,7 @@ function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch('/.netlify/functions/send-email', {
+      const response = await fetch('https://soriebsillah-portfolio.netlify.app/.netlify/functions/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
