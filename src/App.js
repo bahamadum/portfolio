@@ -7,11 +7,16 @@ import Projects from './components/sections/Projects';
 import Skills from './components/sections/Skills';
 import About from './components/sections/About';
 import Contact from './components/sections/Contact';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ProjectDetail from './components/sections/ProjectDetail'; // Create this component for detailed project view
+// import ProjectModal from './components/sections/ProjectModal';
+// import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+       <Router>
       <Header />
 
       {/* Home Section */}
@@ -43,19 +48,6 @@ function App() {
         </div>
       </section>
 
-      {/* Resume Section */}
-      {/* <section id="resume">
-        <div className="content">
-        <Resume />
-        </div>
-      </section> */}
-
-      {/* Blog Section
-      <section id="blog">
-        <div className="content">
-        <Blog />
-        </div>
-      </section> */}
 
       {/* Contact Section */}
       <section id="contact">
@@ -65,9 +57,17 @@ function App() {
       </section>
 
       {/* Footer */}
+   
+        <Routes>
+        <Route path="/project/:id/*" element={<ProjectDetail />} />
+        </Routes>
+
+    
       <footer>
-        <p>&copy; 2023 Sorie Bonkay Sillah </p>
+        <p>&copy; 2023 Amadu Mustapha Bah </p>
       </footer>
+
+      </Router>
     </div>
   );
 }
