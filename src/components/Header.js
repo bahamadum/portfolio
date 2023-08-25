@@ -23,7 +23,7 @@ function Header() {
           <li><Link to="skills" smooth={true} duration={500} onClick={toggleMenu}>Skills</Link></li>
           <li><Link to="projects" smooth={true} duration={500} onClick={toggleMenu}>Projects</Link></li>
           <li><Link to="contact" smooth={true} duration={500} onClick={toggleMenu}>Contact</Link></li>
-          {/* <li><a href="https://github.com/your-username" onClick={toggleMenu}>GitHub</a></li> */}
+          <li><a href="https://github.com/your-username" onClick={toggleMenu}>GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/your-username" onClick={toggleMenu}>LinkedIn</a></li>
           <li><Link to="blog" smooth={true} duration={500} onClick={toggleMenu}>My Blog*</Link></li>
 
